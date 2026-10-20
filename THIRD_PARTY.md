@@ -7,11 +7,9 @@ Provider metadata snapshot: 2026-10-20. GitHub SPDX values and GitLab license na
 | Project / upstream owner | Host | License reported by host | Pinned source |
 | --- | --- | --- | --- |
 | [0x4D31/awesome-threat-detection](https://github.com/0x4D31/awesome-threat-detection) | github | Custom / not identified by host | [f1e6a1528c26](https://github.com/0x4D31/awesome-threat-detection/tree/f1e6a1528c2690d02fa87a97c860235eabc34639) |
-| [0x4m4/hexstrike-ai](https://github.com/0x4m4/hexstrike-ai) | github | MIT | [d689933ff579](https://github.com/0x4m4/hexstrike-ai/tree/d689933ff579d839c676c82b231f8e98326c5f04) |
 | [1N3/IntruderPayloads](https://github.com/1N3/IntruderPayloads) | github | Custom / not identified by host | [9b84328441e0](https://github.com/1N3/IntruderPayloads/tree/9b84328441e0b1d5b63764941bfd72a2460dba5d) |
 | [AFLplusplus/AFLplusplus](https://github.com/AFLplusplus/AFLplusplus) | github | AGPL-3.0 | [d0070729206a](https://github.com/AFLplusplus/AFLplusplus/tree/d0070729206a80a9af297b2341edd63f68fdac35) |
 | [aircrack-ng/aircrack-ng](https://github.com/aircrack-ng/aircrack-ng) | github | GPL-2.0 | [7e2256f38f35](https://github.com/aircrack-ng/aircrack-ng/tree/7e2256f38f3590af4c19a6ae14ed79bab02242e6) |
-| [aliasrobotics/cai](https://github.com/aliasrobotics/cai) | github | Custom / not identified by host | [6dc79257777f](https://github.com/aliasrobotics/cai/tree/6dc79257777f5f1c9500b4d2319935d34a47412e) |
 | [anchore/grype](https://github.com/anchore/grype) | github | Apache-2.0 | [afe2742527d9](https://github.com/anchore/grype/tree/afe2742527d98d822da06c9f32eed86fe3d193e0) |
 | [anchore/syft](https://github.com/anchore/syft) | github | Apache-2.0 | [f15c3343e29d](https://github.com/anchore/syft/tree/f15c3343e29dfb20cf6d82c820e7090b49808c96) |
 | [angr/angr](https://github.com/angr/angr) | github | BSD-2-Clause | [16245f07bc53](https://github.com/angr/angr/tree/16245f07bc53b52bd75cbfd738bb4cadba7b6174) |
@@ -19,7 +17,6 @@ Provider metadata snapshot: 2026-10-20. GitHub SPDX values and GitLab license na
 | [apache/caldera](https://github.com/apache/caldera) | github | Apache-2.0 | [cb8d6a8160e0](https://github.com/apache/caldera/tree/cb8d6a8160e0f4990af323a7c071d5e8482b42c7) |
 | [aquasecurity/kube-bench](https://github.com/aquasecurity/kube-bench) | github | Apache-2.0 | [e278a5915a98](https://github.com/aquasecurity/kube-bench/tree/e278a5915a982f2756026de6e2f9ca77077ef9f9) |
 | [aquasecurity/kube-hunter](https://github.com/aquasecurity/kube-hunter) | github | Apache-2.0 | [bc47f08e88ea](https://github.com/aquasecurity/kube-hunter/tree/bc47f08e88ea2a5fb059bf3b8a8edb1aefb4c6cc) |
-| [aquasecurity/trivy](https://github.com/aquasecurity/trivy) | github | Apache-2.0 | [b65f323088c5](https://github.com/aquasecurity/trivy/tree/b65f323088c50dee7ecead5418fda4fa74c6693a) |
 | [ashishb/android-security-awesome](https://github.com/ashishb/android-security-awesome) | github | Apache-2.0 | [b21a710ccf4b](https://github.com/ashishb/android-security-awesome/tree/b21a710ccf4b6dbd470933105f5d53e9ca5663e0) |
 | [assetnote/kiterunner](https://github.com/assetnote/kiterunner) | github | AGPL-3.0 | [7d5824cda9a2](https://github.com/assetnote/kiterunner/tree/7d5824cda9a2eef86d8d18b05b713d7e260f34d2) |
 | [assetnote/wordlists](https://github.com/assetnote/wordlists) | github | Apache-2.0 | [6dea231f4cbd](https://github.com/assetnote/wordlists/tree/6dea231f4cbd356a637851b1c13b83de4da00adb) |
@@ -29,10 +26,8 @@ Provider metadata snapshot: 2026-10-20. GitHub SPDX values and GitLab license na
 | [BishopFox/sliver](https://github.com/BishopFox/sliver) | github | GPL-3.0 | [5383bd67b526](https://github.com/BishopFox/sliver/tree/5383bd67b526b4a8425d9bd699a53eb3a18b1255) |
 | [blacklanternsecurity/bbot](https://github.com/blacklanternsecurity/bbot) | github | AGPL-3.0 | [a6fb827bb144](https://github.com/blacklanternsecurity/bbot/tree/a6fb827bb144cdb85b52e142a4d6e14ed5f94b69) |
 | [bridgecrewio/checkov](https://github.com/bridgecrewio/checkov) | github | Apache-2.0 | [7a6782e3d81e](https://github.com/bridgecrewio/checkov/tree/7a6782e3d81e19f1bdd9213129f3138767691f5f) |
-| [BuffaloWill/Serpico](https://github.com/BuffaloWill/Serpico) | github | Custom / not identified by host | [667a4853ecd0](https://github.com/BuffaloWill/Serpico/tree/667a4853ecd0b01e2d40166269f3b1e916a480d5) |
 | [bugcrowd/HUNT](https://github.com/bugcrowd/HUNT) | github | Apache-2.0 | [5ba4dccff3bd](https://github.com/bugcrowd/HUNT/tree/5ba4dccff3bd98c7ca0a7024e5cff8aaf0afbd5d) |
 | [c3c/ADExplorerSnapshot](https://github.com/c3c/ADExplorerSnapshot) | github | Custom / not identified by host | [2f845904afec](https://github.com/c3c/ADExplorerSnapshot/tree/2f845904afecd83ca49a475e2c121c4501f94453) |
-| [capstone-engine/capstone](https://github.com/capstone-engine/capstone) | github | Custom / not identified by host | [d01f16f4f64f](https://github.com/capstone-engine/capstone/tree/d01f16f4f64fff65b450cb4d6be0bf0c6da809a0) |
 | [Ch0pin/medusa](https://github.com/Ch0pin/medusa) | github | GPL-3.0 | [a7bd929f297f](https://github.com/Ch0pin/medusa/tree/a7bd929f297f0725a5e4d2e3952874a757d4e2fc) |
 | [cobbr/Covenant](https://github.com/cobbr/Covenant) | github | GPL-3.0 | [5decc3ccfab0](https://github.com/cobbr/Covenant/tree/5decc3ccfab04e6e881ed00c9de649740dac8ad1) |
 | [curl/curl](https://github.com/curl/curl) | github | Custom / not identified by host | [eb2b201a2da3](https://github.com/curl/curl/tree/eb2b201a2da3bfc6fefd7ff2d8e476e3cb9e5bcb) |
@@ -67,7 +62,6 @@ Provider metadata snapshot: 2026-10-20. GitHub SPDX values and GitLab license na
 | [GitHubSecurityLab/seclab-taskflow-agent](https://github.com/GitHubSecurityLab/seclab-taskflow-agent) | github | MIT | [ab02b1fe8ac3](https://github.com/GitHubSecurityLab/seclab-taskflow-agent/tree/ab02b1fe8ac3d94352332b2c739c579f0d5ae810) |
 | [gitleaks/gitleaks](https://github.com/gitleaks/gitleaks) | github | MIT | [b58d3f102cf3](https://github.com/gitleaks/gitleaks/tree/b58d3f102cf3a2c84cb7f923d05c25c9b1aed84b) |
 | [giuspen/cherrytree](https://github.com/giuspen/cherrytree) | github | Custom / not identified by host | [44aee2c96c17](https://github.com/giuspen/cherrytree/tree/44aee2c96c1725e896138e6c786522e303dab55d) |
-| [google/adb-sync](https://github.com/google/adb-sync) | github | Apache-2.0 | [09e0abf3fc09](https://github.com/google/adb-sync/tree/09e0abf3fc094237380a2ce392e64d2a05420489) |
 | [google/oss-fuzz](https://github.com/google/oss-fuzz) | github | Apache-2.0 | [6e2d4a84b25b](https://github.com/google/oss-fuzz/tree/6e2d4a84b25ba47ea6042a06af2c284be1a64124) |
 | [googleprojectzero/fuzzilli](https://github.com/googleprojectzero/fuzzilli) | github | Apache-2.0 | [be2811d00282](https://github.com/googleprojectzero/fuzzilli/tree/be2811d00282320381fc8007d64873745772011d) |
 | [googleprojectzero/winafl](https://github.com/googleprojectzero/winafl) | github | Apache-2.0 | [fd85f38548b1](https://github.com/googleprojectzero/winafl/tree/fd85f38548b14352f4b70ad414f364ea6dc1a769) |
@@ -142,7 +136,6 @@ Provider metadata snapshot: 2026-10-20. GitHub SPDX values and GitLab license na
 | [projectdiscovery/tlsx](https://github.com/projectdiscovery/tlsx) | github | MIT | [7f24430c54c4](https://github.com/projectdiscovery/tlsx/tree/7f24430c54c473e6b32caf29753562da6ffb4181) |
 | [projectdiscovery/uncover](https://github.com/projectdiscovery/uncover) | github | MIT | [827504844132](https://github.com/projectdiscovery/uncover/tree/8275048441329a9ce0622bead7b37826d34e5d7d) |
 | [promptfoo/promptfoo](https://github.com/promptfoo/promptfoo) | github | MIT | [b49d55dfdec2](https://github.com/promptfoo/promptfoo/tree/b49d55dfdec226bb299afee253122879570cc536) |
-| [protectai/llm-guard](https://github.com/protectai/llm-guard) | github | MIT | [168c1034ffdb](https://github.com/protectai/llm-guard/tree/168c1034ffdb33837e7ae6fd6a16b80567c1be03) |
 | [prowler-cloud/prowler](https://github.com/prowler-cloud/prowler) | github | Apache-2.0 | [4d922da2a6a2](https://github.com/prowler-cloud/prowler/tree/4d922da2a6a29fdf49287176bae11401aaf02b75) |
 | [pwndbg/pwndbg](https://github.com/pwndbg/pwndbg) | github | MIT | [d887a5c04b10](https://github.com/pwndbg/pwndbg/tree/d887a5c04b10eb36637600185775064d3c2904e1) |
 | [r0ysue/r0capture](https://github.com/r0ysue/r0capture) | github | Apache-2.0 | [3e4e9f9765c4](https://github.com/r0ysue/r0capture/tree/3e4e9f9765c4e1d06c17e3a24bf64189de498eb0) |
