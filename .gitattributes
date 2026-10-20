@@ -1,0 +1,4 @@
+# Preserve source bundles byte-for-byte across platforms.
+*.bundle binary
+*.md text eol=lf
+*.json text eol=lf
