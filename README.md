@@ -4,59 +4,41 @@
 
 A curated source collection for red teaming, penetration testing, security research, AI-assisted testing and assessment automation.
 
-**200 public projects · 194 GitHub · 6 GitLab · 13 categories**
+**193 active public projects · 187 GitHub · 6 GitLab · 13 categories**
 
-- [Browse every project, popularity snapshot, license and pinned source](CATALOG.md)
-- [Download the complete prepared Git collection](RedTeaming.bundle)
+- [Browse every active project, stars, license and pinned source](CATALOG.md)
+- [Source review and limits](SOURCE_REVIEW.md)
+- [Seven excluded projects and the reasons](EXCLUDED.md)
 - [Machine-readable catalog and profiles](catalog.json)
+- [Recorded source review evidence](source-review.json)
 - [Original authors and third-party licenses](THIRD_PARTY.md)
 
-## Download every source into one workspace
+## Source selection
 
-The Git bundle contains the collection's full Git history, scripts, documentation and 200 pinned submodule entries. The upstream projects' source files are downloaded by the fetch command below. This GitHub tree currently publishes the catalog and source bundle; clone the bundle to use the prepared submodule workspace.
+Seven flagged sources were removed from the active catalog, all profiles and the prepared workspace: HexStrike and Capstone with advisory matches for their previous pins, Trivy under a conservative policy following a historical supply-chain incident, and four archived projects. Every remaining source has stars and a reachable recorded commit. This selection is not a malware-free certification. AI agents still require permission/data-flow review; deliberately vulnerable labs require isolation.
 
-```bash
-git clone https://github.com/bunnyho1e/RedTeaming.git RedTeaming-download
-git clone --branch main RedTeaming-download/RedTeaming.bundle RedTeaming-sources
-cd RedTeaming-sources
-python3 scripts/workspace.py fetch --all --jobs 6
-```
-
-Git and Python 3.9+ are enough for the helper. Each upstream tool has its own installation and operating-system requirements. Fetching source does not install or run those tools.
-
-## Select an area
+## Download sources into one workspace
 
 ```bash
-python3 scripts/workspace.py fetch --profile starter
-python3 scripts/workspace.py fetch --profile web
-python3 scripts/workspace.py fetch --profile ad
-python3 scripts/workspace.py fetch --profile mobile
-python3 scripts/workspace.py fetch --profile cloud
-python3 scripts/workspace.py fetch --profile ai
-python3 scripts/workspace.py fetch --category recon
+git clone https://github.com/bunnyho1e/RedTeaming.git
+cd RedTeaming
+python3 fetch_sources.py --all --jobs 4
 ```
 
-The 13 categories cover playbooks, reconnaissance, web/API testing, Active Directory and identity, cloud security, mobile instrumentation, network traffic, adversary emulation, reverse engineering, wordlists, AI security, reporting and practice labs.
-
-Included projects range from Nuclei, Burp extensions, BloodHound, Impacket, NetExec, Frida and MobSF to Metasploit, Sliver, PentestGPT, PentAGI, Strix, Shannon, ExploitDB, Wireshark and Kali NetHunter.
-
-## Verify and update
+The helper downloads only the **193 active sources** at their recorded commits into `tools/<category>/<host>/<project>/`. It does not install or execute upstream tools or fetch nested submodules. Git and Python 3.9+ are sufficient. A normal Git clone alone does not download the upstream source trees.
 
 ```bash
-python3 scripts/workspace.py verify
-python3 -m unittest discover -s tests -v
-python3 scripts/workspace.py update --profile web --jobs 4
-git diff --cached --stat
+python3 fetch_sources.py --profile starter
+python3 fetch_sources.py --profile web
+python3 fetch_sources.py --profile ad
+python3 fetch_sources.py --profile mobile
+python3 fetch_sources.py --profile cloud
+python3 fetch_sources.py --profile ai
+python3 fetch_sources.py --all --dry-run
 ```
 
-The prepared collection passes 11 tests. Each source is pinned to a verified commit; original authors, upstream history and license terms are preserved. `update` advances selected pins and stages the changes for review; it does not push. Popularity and license metadata retain their recorded verification dates.
+## Source versions and verification
 
-## Provenance
+`catalog.json` is the active allowlist. Re-running the helper checks out its exact recorded pins. Changes to those pins require a new source review. The earlier 200-source bundle is no longer part of this active download path.
 
-Popularity snapshot: **2026-10-20**. Stars are popularity signals, not a guarantee of quality or security. Archived projects are labeled in the catalog. Each upstream project's own license governs its source; the bundle's MIT license covers this collection's original scripts and documentation.
-
-Bundle SHA-256:
-
-```text
-54161d1ad565b0fd36ddff9db85a09c82ea59269b285d551da0ee4c0d6e76b6a
-```
+The prepared submodule workspace passes its 11 tests, and the direct helper's dry run selects exactly the same 193 source IDs. The review does not cover every transitive dependency, reference link or release binary. Original upstream license terms apply to each project.
