@@ -1,8 +1,8 @@
 # RedTeaming source catalog
 
-200 public upstream projects grouped into 13 categories. Popularity and license metadata checked October 20, 2026. GitHub and GitLab view counts are not public; category tables sort by stars.
+**193 active public projects · 187 GitHub · 6 GitLab · 13 categories.** Popularity and license snapshot: 2026-10-20. Tables sort by stars. Seven flagged sources were removed from this catalog and all download profiles.
 
-[Workspace home](README.md) · [Machine-readable catalog](catalog.json) · [Upstream attribution](THIRD_PARTY.md)
+[Workspace](README.md) · [Source review](SOURCE_REVIEW.md) · [Exclusions](EXCLUDED.md) · [Catalog JSON](catalog.json)
 
 ## Playbooks & knowledge
 
@@ -115,7 +115,6 @@
 
 | Project | Stars | Forks | Purpose | State | License | Pinned source |
 | --- | ---: | ---: | --- | --- | --- | --- |
-| [aquasecurity/trivy](https://github.com/aquasecurity/trivy) | 38,528 | 776 | Vulnerability and configuration scanning | Not archived | Apache-2.0 | [b65f323088c5](https://github.com/aquasecurity/trivy/tree/b65f323088c50dee7ecead5418fda4fa74c6693a) |
 | [gitleaks/gitleaks](https://github.com/gitleaks/gitleaks) | 30,141 | 2,412 | Git secret detection | Not archived | MIT | [b58d3f102cf3](https://github.com/gitleaks/gitleaks/tree/b58d3f102cf3a2c84cb7f923d05c25c9b1aed84b) |
 | [trufflesecurity/trufflehog](https://github.com/trufflesecurity/trufflehog) | 28,598 | 2,652 | Credential discovery and verification | Not archived | AGPL-3.0 | [e63326d6545d](https://github.com/trufflesecurity/trufflehog/tree/e63326d6545de8f425d93ce24078c6e68d83f70e) |
 | [semgrep/semgrep](https://github.com/semgrep/semgrep) | 17,139 | 1,112 | Static application security analysis | Not archived | LGPL-2.1 | [51602ad27f09](https://github.com/semgrep/semgrep/tree/51602ad27f09ef9342a5620601de5ef8f572fbc6) |
@@ -150,7 +149,6 @@
 | [patrickfav/uber-apk-signer](https://github.com/patrickfav/uber-apk-signer) | 2,784 | 266 | Android APK signing utility | Not archived | Apache-2.0 | [76cbf02556b4](https://github.com/patrickfav/uber-apk-signer/tree/76cbf02556b4454f4c2bd6c908b4355003c4e37d) |
 | [Ch0pin/medusa](https://github.com/Ch0pin/medusa) | 2,358 | 319 | Android and iOS instrumentation framework | Not archived | GPL-3.0 | [a7bd929f297f](https://github.com/Ch0pin/medusa/tree/a7bd929f297f0725a5e4d2e3952874a757d4e2fc) |
 | [googleprojectzero/fuzzilli](https://github.com/googleprojectzero/fuzzilli) | 2,358 | 367 | JavaScript engine fuzzing | Not archived | Apache-2.0 | [be2811d00282](https://github.com/googleprojectzero/fuzzilli/tree/be2811d00282320381fc8007d64873745772011d) |
-| [google/adb-sync](https://github.com/google/adb-sync) | 1,097 | 192 | ADB file synchronization | Archived reference | Apache-2.0 | [09e0abf3fc09](https://github.com/google/adb-sync/tree/09e0abf3fc094237380a2ce392e64d2a05420489) |
 | [MobSF/mobsfscan](https://github.com/MobSF/mobsfscan) | 793 | 128 | Mobile source-code static security analysis | Not archived | LGPL-3.0 | [4645ea70bc09](https://github.com/MobSF/mobsfscan/tree/4645ea70bc093268502fe9f6df93e41bb482254a) |
 | [frida/frida-tools](https://github.com/frida/frida-tools) | 533 | 138 | Frida command-line tools | Not archived | Custom / not identified by host | [330ed423f71b](https://github.com/frida/frida-tools/tree/330ed423f71b7797e4be1821795463728430b43e) |
 | [kalilinux/nethunter/apps/kali-nethunter-app](https://gitlab.com/kalilinux/nethunter/apps/kali-nethunter-app) | 150 | 259 | Kali NetHunter Android application | Not reported | GNU General Public License v2.0 or later | [b57348d6fbe8](https://gitlab.com/kalilinux/nethunter/apps/kali-nethunter-app/-/tree/b57348d6fbe8cc13170bfe10bcac6a82c1e42e14) |
@@ -201,7 +199,6 @@
 | [VirusTotal/yara](https://github.com/VirusTotal/yara) | 9,958 | 1,588 | Pattern matching for malware research | Not archived | BSD-3-Clause | [5cd1e8b64082](https://github.com/VirusTotal/yara/tree/5cd1e8b64082c0e0ddce2ad1e1748df41700ab9e) |
 | [unicorn-engine/unicorn](https://github.com/unicorn-engine/unicorn) | 9,471 | 1,563 | CPU emulation engine | Not archived | GPL-2.0 | [7c5db94191de](https://github.com/unicorn-engine/unicorn/tree/7c5db94191defc1e04a4f66f4eb1220903cba837) |
 | [angr/angr](https://github.com/angr/angr) | 9,222 | 1,204 | Binary analysis and symbolic execution | Not archived | BSD-2-Clause | [16245f07bc53](https://github.com/angr/angr/tree/16245f07bc53b52bd75cbfd738bb4cadba7b6174) |
-| [capstone-engine/capstone](https://github.com/capstone-engine/capstone) | 9,116 | 1,743 | Multi-architecture disassembly framework | Not archived | Custom / not identified by host | [d01f16f4f64f](https://github.com/capstone-engine/capstone/tree/d01f16f4f64fff65b450cb4d6be0bf0c6da809a0) |
 | [hugsy/gef](https://github.com/hugsy/gef) | 8,404 | 843 | GDB exploitation research helpers | Not archived | MIT | [49c07dc60624](https://github.com/hugsy/gef/tree/49c07dc60624f264d40b5c6ea39b2bf3a4e9958f) |
 | [AFLplusplus/AFLplusplus](https://github.com/AFLplusplus/AFLplusplus) | 6,816 | 1,328 | Coverage-guided fuzzing | Not archived | AGPL-3.0 | [d0070729206a](https://github.com/AFLplusplus/AFLplusplus/tree/d0070729206a80a9af297b2341edd63f68fdac35) |
 | [mandiant/capa](https://github.com/mandiant/capa) | 6,256 | 737 | Static program capability analysis | Not archived | Apache-2.0 | [7a235c46965e](https://github.com/mandiant/capa/tree/7a235c46965ea0965c65be3b9ee1e21dca686f3d) |
@@ -229,14 +226,11 @@
 | [vxcontrol/pentagi](https://github.com/vxcontrol/pentagi) | 31,377 | 4,982 | Agent-based security assessment platform | Not archived | MIT | [843dfeb4bfc8](https://github.com/vxcontrol/pentagi/tree/843dfeb4bfc809c09d1bc5022e567c602d8fc9dd) |
 | [promptfoo/promptfoo](https://github.com/promptfoo/promptfoo) | 26,164 | 2,521 | LLM and agent evaluation framework | Not archived | MIT | [b49d55dfdec2](https://github.com/promptfoo/promptfoo/tree/b49d55dfdec226bb299afee253122879570cc536) |
 | [GreyDGL/PentestGPT](https://github.com/GreyDGL/PentestGPT) | 16,036 | 2,976 | LLM-assisted penetration testing research | Not archived | MIT | [e8b1bb77d1ac](https://github.com/GreyDGL/PentestGPT/tree/e8b1bb77d1ac00329675cec3b060aba971ec1ac8) |
-| [0x4m4/hexstrike-ai](https://github.com/0x4m4/hexstrike-ai) | 12,955 | 2,799 | AI-assisted security tool orchestration | Not archived | MIT | [d689933ff579](https://github.com/0x4m4/hexstrike-ai/tree/d689933ff579d839c676c82b231f8e98326c5f04) |
-| [aliasrobotics/cai](https://github.com/aliasrobotics/cai) | 9,841 | 1,517 | Cybersecurity AI framework | Archived reference | Custom / not identified by host | [6dc79257777f](https://github.com/aliasrobotics/cai/tree/6dc79257777f5f1c9500b4d2319935d34a47412e) |
 | [NVIDIA/garak](https://github.com/NVIDIA/garak) | 9,622 | 1,388 | LLM security evaluation toolkit | Not archived | Apache-2.0 | [cc1215c5c301](https://github.com/NVIDIA/garak/tree/cc1215c5c301a69f115b0b2b7ef8e4172ae2e7fc) |
 | [trailofbits/skills](https://github.com/trailofbits/skills) | 7,651 | 662 | Security review skills for AI coding assistants | Not archived | CC-BY-SA-4.0 | [5c99c03fb8a9](https://github.com/trailofbits/skills/tree/5c99c03fb8a9ea568432ecbcba5d86e9f4ac2bf0) |
 | [Giskard-AI/giskard-oss](https://github.com/Giskard-AI/giskard-oss) | 5,911 | 554 | AI application evaluation and testing | Not archived | Apache-2.0 | [042ed8716264](https://github.com/Giskard-AI/giskard-oss/tree/042ed87162641dcb1512b02fe57054667a28cf9d) |
 | [microsoft/PyRIT](https://github.com/microsoft/PyRIT) | 4,658 | 970 | Generative AI risk identification toolkit | Not archived | MIT | [85d4f0c398bf](https://github.com/microsoft/PyRIT/tree/85d4f0c398bfd1bf3f09e1a56ddf3ee65caf054b) |
 | [meta-llama/PurpleLlama](https://github.com/meta-llama/PurpleLlama) | 4,440 | 779 | LLM application security evaluation | Not archived | Custom / not identified by host | [d934ea285d12](https://github.com/meta-llama/PurpleLlama/tree/d934ea285d124d81c10f7e15a06a1e1f74eff2c3) |
-| [protectai/llm-guard](https://github.com/protectai/llm-guard) | 3,217 | 469 | LLM input and output security controls | Archived reference | MIT | [168c1034ffdb](https://github.com/protectai/llm-guard/tree/168c1034ffdb33837e7ae6fd6a16b80567c1be03) |
 | [trailofbits/buttercup](https://github.com/trailofbits/buttercup) | 1,726 | 189 | Automated vulnerability discovery and patching research | Not archived | AGPL-3.0 | [298c01fbff3b](https://github.com/trailofbits/buttercup/tree/298c01fbff3bf0bf166c87856acd7e42f94f7157) |
 | [six2dez/burp-ai-agent](https://github.com/six2dez/burp-ai-agent) | 1,547 | 231 | AI integration for Burp Suite workflows | Not archived | MIT | [1718308d8d86](https://github.com/six2dez/burp-ai-agent/tree/1718308d8d864b94c8347ec537e301a9cbb5d5ac) |
 | [PortSwigger/mcp-server](https://github.com/PortSwigger/mcp-server) | 1,245 | 212 | Burp Suite Model Context Protocol integration | Not archived | GPL-3.0 | [642e6fa31c63](https://github.com/PortSwigger/mcp-server/tree/642e6fa31c63db3886a353fcd7ed62037e0ceed5) |
@@ -253,7 +247,6 @@
 | [Syslifters/sysreptor](https://github.com/Syslifters/sysreptor) | 2,604 | 297 | Customizable security assessment reporting | Not archived | Custom / not identified by host | [7b742e0848ce](https://github.com/Syslifters/sysreptor/tree/7b742e0848ce3f434ad22e2d5f35f0b38ee28aab) |
 | [reportportal/reportportal](https://github.com/reportportal/reportportal) | 2,040 | 505 | Test results and reporting platform | Not archived | Apache-2.0 | [e0bb071de9c0](https://github.com/reportportal/reportportal/tree/e0bb071de9c07dfc4c3ddaf55de621853feccf2b) |
 | [GhostManager/Ghostwriter](https://github.com/GhostManager/Ghostwriter) | 1,945 | 258 | Red team engagement and reporting management | Not archived | BSD-3-Clause | [f38174bb6ee4](https://github.com/GhostManager/Ghostwriter/tree/f38174bb6ee4ead86b8039abb1f7742ae8b97242) |
-| [BuffaloWill/Serpico](https://github.com/BuffaloWill/Serpico) | 1,115 | 359 | Penetration test report generation reference | Archived reference | Custom / not identified by host | [667a4853ecd0](https://github.com/BuffaloWill/Serpico/tree/667a4853ecd0b01e2d40166269f3b1e916a480d5) |
 | [dradis/dradis-ce](https://github.com/dradis/dradis-ce) | 843 | 230 | Collaborative security reporting | Not archived | GPL-2.0 | [0c85e061127f](https://github.com/dradis/dradis-ce/tree/0c85e061127f6da8c1d0bd62facbfa4768d782f1) |
 
 ## Practice labs
