@@ -17,7 +17,7 @@ The Git bundle contains the collection's full Git history, scripts, documentatio
 
 ```bash
 git clone https://github.com/bunnyho1e/RedTeaming.git RedTeaming-download
-git clone RedTeaming-download/RedTeaming.bundle RedTeaming-sources
+git clone --branch main RedTeaming-download/RedTeaming.bundle RedTeaming-sources
 cd RedTeaming-sources
 python3 scripts/workspace.py fetch --all --jobs 6
 ```
