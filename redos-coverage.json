@@ -1,0 +1,2719 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-21T06:52:09.279343+00:00",
+  "inventory": "RedOS Arsenal CE 1.0 partially inspected VM",
+  "inventory_limit": "147 menu entries plus 74 additional normalized tools/collections/commands. About 4.28 GiB of VDI data was not recovered after the official download hit its quota; this is not a complete VM SBOM.",
+  "version_limit": "Matches tool/source identities; new pins do not claim byte-for-byte equality with VM-installed versions.",
+  "upstream": "https://www.redteamgarage.com/rtg/rtg-redos",
+  "baseline_repository_commit": "fa3fe6246083d83fafc34212dac5616cd2a4836a",
+  "rows": [
+    {
+      "name": "amass",
+      "command": "amass",
+      "section": "Recon i OSINT",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:owasp-amass/amass"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "asnmap",
+      "command": "asnmap",
+      "section": "Recon i OSINT",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:projectdiscovery/asnmap"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "assetfinder",
+      "command": "assetfinder",
+      "section": "Recon i OSINT",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:tomnomnom/assetfinder"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "crt.sh upit preko curl-a",
+      "command": "curl",
+      "section": "Recon i OSINT",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:curl/curl"
+      ],
+      "status": "included",
+      "note": "curl je katalogizovan; crt.sh je spoljašnji servis korišćen u prečici."
+    },
+    {
+      "name": "dnsenum",
+      "command": "dnsenum",
+      "section": "Recon i OSINT",
+      "group": "menu",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:SparrowOchon/dnsenum2"
+      ],
+      "status": "included",
+      "note": "Kali/Fedora-maintained dnsenum fork. README suggests an HTTP curl-to-Perl installer; Makefile install can install CPAN dependencies. Neither is run by this collection."
+    },
+    {
+      "name": "dnsx",
+      "command": "dnsx",
+      "section": "Recon i OSINT",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:projectdiscovery/dnsx"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "exiftool",
+      "command": "exiftool",
+      "section": "Recon i OSINT",
+      "group": "menu",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:exiftool/exiftool"
+      ],
+      "status": "included",
+      "note": "Pinned upstream Perl application and module files captured; metadata parsing and user-supplied configuration/expression features are outside a sandbox boundary."
+    },
+    {
+      "name": "gau",
+      "command": "gau",
+      "section": "Recon i OSINT",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:lc/gau"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "gowitness",
+      "command": "gowitness",
+      "section": "Recon i OSINT",
+      "group": "menu",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:sensepost/gowitness"
+      ],
+      "status": "included",
+      "note": "Headless browser screenshot tool. Reviewed root command, runner and build files; it acts on supplied websites and requires a browser at execution time."
+    },
+    {
+      "name": "httpx",
+      "command": "httpx",
+      "section": "Recon i OSINT",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:projectdiscovery/httpx"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "katana",
+      "command": "katana",
+      "section": "Recon i OSINT",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:projectdiscovery/katana"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "knockpy",
+      "command": "knockpy",
+      "section": "Recon i OSINT",
+      "group": "menu",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:guelfoweb/knockpy"
+      ],
+      "status": "included",
+      "note": "Reviewed packaging and CLI/config entrypoints. Passive sources can receive queried domains; optional API keys are stored in the tool configuration."
+    },
+    {
+      "name": "masscan",
+      "command": "masscan",
+      "section": "Recon i OSINT",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:robertdavidgraham/masscan"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "nmap",
+      "command": "nmap",
+      "section": "Recon i OSINT",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:nmap/nmap"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "puredns",
+      "command": "puredns",
+      "section": "Recon i OSINT",
+      "group": "menu",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:d3mondev/puredns"
+      ],
+      "status": "included",
+      "note": "DNS wrapper around an external massdns executable. No dependency installer is invoked by the collection."
+    },
+    {
+      "name": "sherlock",
+      "command": "sherlock",
+      "section": "Recon i OSINT",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:sherlock-project/sherlock"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "subfinder",
+      "command": "subfinder",
+      "section": "Recon i OSINT",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:projectdiscovery/subfinder"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "theHarvester",
+      "command": "theHarvester",
+      "section": "Recon i OSINT",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:laramies/theHarvester"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "tshark",
+      "command": "tshark",
+      "section": "Recon i OSINT",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "gitlab:wireshark/wireshark"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "waybackurls",
+      "command": "waybackurls",
+      "section": "Recon i OSINT",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:tomnomnom/waybackurls"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "feroxbuster",
+      "command": "feroxbuster",
+      "section": "Skeniranje ranjivosti",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:epi052/feroxbuster"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "ffuf",
+      "command": "ffuf",
+      "section": "Skeniranje ranjivosti",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:ffuf/ffuf"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "gobuster",
+      "command": "gobuster",
+      "section": "Skeniranje ranjivosti",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:OJ/gobuster"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "nikto",
+      "command": "nikto",
+      "section": "Skeniranje ranjivosti",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:sullo/nikto"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "nuclei",
+      "command": "nuclei",
+      "section": "Skeniranje ranjivosti",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:projectdiscovery/nuclei"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "wapiti",
+      "command": "wapiti",
+      "section": "Skeniranje ranjivosti",
+      "group": "menu",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:wapiti-scanner/wapiti"
+      ],
+      "status": "included",
+      "note": "Reviewed package metadata and CLI entrypoint. Scanner can update upstream fingerprint data; targets, optional callback endpoints and dependencies require execution-time review."
+    },
+    {
+      "name": "wfuzz",
+      "command": "wfuzz",
+      "section": "Skeniranje ranjivosti",
+      "group": "menu",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:xmendez/wfuzz"
+      ],
+      "status": "included",
+      "note": "Packaging reads local version/README and temporarily creates a documentation symlink. CLI and request-fuzzing entrypoints captured; no install performed."
+    },
+    {
+      "name": "WPScan",
+      "command": "wpscan",
+      "section": "Skeniranje ranjivosti",
+      "group": "menu",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:wpscanteam/wpscan"
+      ],
+      "status": "included",
+      "note": "Original WPScan source. Custom WPScan Public Source License has commercial conditions. Optional vulnerability API/database requests are expected application behavior."
+    },
+    {
+      "name": "arjun",
+      "command": "arjun",
+      "section": "Web aplikacije",
+      "group": "menu",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:s0md3v/Arjun"
+      ],
+      "status": "included",
+      "note": "HTTP parameter scanner; package setup imports its local version module. No installer or target requests executed."
+    },
+    {
+      "name": "crlfuzz",
+      "command": "crlfuzz",
+      "section": "Web aplikacije",
+      "group": "menu",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:dwisiswant0/crlfuzz"
+      ],
+      "status": "included",
+      "note": "Reviewed Go CLI and release installer. README curl-to-shell shortcut downloads release binaries; collection uses pinned source instead of that installer."
+    },
+    {
+      "name": "dalfox",
+      "command": "dalfox",
+      "section": "Web aplikacije",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:hahwul/dalfox"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "dirsearch",
+      "command": "dirsearch",
+      "section": "Web aplikacije",
+      "group": "menu",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:maurosoria/dirsearch"
+      ],
+      "status": "included",
+      "note": "Reviewed Python packaging/entrypoint and native build metadata. Dockerfile invokes a remote Rust installer; not used by the source fetcher."
+    },
+    {
+      "name": "mitmproxy",
+      "command": "mitmproxy",
+      "section": "Web aplikacije",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:mitmproxy/mitmproxy"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "sqlmap",
+      "command": "sqlmap",
+      "section": "Web aplikacije",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:sqlmapproject/sqlmap"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "hydra",
+      "command": "hydra",
+      "section": "Eksploatacija i početni pristup",
+      "group": "menu",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:vanhauser-thc/thc-hydra"
+      ],
+      "status": "included",
+      "note": "Official THC authentication assessment source; reviewed configure and C entrypoint. Authentication attempts are an intentional capability, not proof of an upstream implant."
+    },
+    {
+      "name": "medusa",
+      "command": "medusa",
+      "section": "Eksploatacija i početni pristup",
+      "group": "menu",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:jmk-foofus/medusa"
+      ],
+      "status": "included",
+      "note": "Foofus network authentication tool. This is distinct from Ch0pin/medusa already present for mobile instrumentation."
+    },
+    {
+      "name": "Metasploit Framework",
+      "command": "msfconsole",
+      "section": "Eksploatacija i početni pristup",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:rapid7/metasploit-framework"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "msfconsole"
+    },
+    {
+      "name": "searchsploit",
+      "command": "searchsploit",
+      "section": "Eksploatacija i početni pristup",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "gitlab:exploit-database/exploitdb"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "addcomputer.py",
+      "command": "addcomputer.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/addcomputer.py"
+    },
+    {
+      "name": "adidnsdump",
+      "command": "adidnsdump",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:dirkjanm/adidnsdump"
+      ],
+      "status": "included",
+      "note": "Reviewed setup and DNS-dumping module. Credentials are used for the explicitly selected AD/DNS endpoint."
+    },
+    {
+      "name": "atexec.py",
+      "command": "atexec.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/atexec.py"
+    },
+    {
+      "name": "attrib.py",
+      "command": "attrib.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/attrib.py"
+    },
+    {
+      "name": "badsuccessor.py",
+      "command": "badsuccessor.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/badsuccessor.py"
+    },
+    {
+      "name": "bloodhound-python",
+      "command": "bloodhound-python",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:dirkjanm/BloodHound.py"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "certipy-ad",
+      "command": "certipy",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:ly4k/Certipy"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "changepasswd.py",
+      "command": "changepasswd.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/changepasswd.py"
+    },
+    {
+      "name": "CheckLDAPStatus.py",
+      "command": "CheckLDAPStatus.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/CheckLDAPStatus.py"
+    },
+    {
+      "name": "checkMSSQLStatus.py",
+      "command": "checkMSSQLStatus.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/checkMSSQLStatus.py"
+    },
+    {
+      "name": "dacledit.py",
+      "command": "dacledit.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/dacledit.py"
+    },
+    {
+      "name": "dcomexec.py",
+      "command": "dcomexec.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/dcomexec.py"
+    },
+    {
+      "name": "describeTicket.py",
+      "command": "describeTicket.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/describeTicket.py"
+    },
+    {
+      "name": "dpapi.py",
+      "command": "dpapi.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/dpapi.py"
+    },
+    {
+      "name": "dpapidump.py",
+      "command": "dpapidump.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/dpapidump.py"
+    },
+    {
+      "name": "DumpNTLMInfo.py",
+      "command": "DumpNTLMInfo.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/DumpNTLMInfo.py"
+    },
+    {
+      "name": "esentutl.py",
+      "command": "esentutl.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/esentutl.py"
+    },
+    {
+      "name": "evil-winrm (Python)",
+      "command": "evil-winrm-py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:adityatelange/evil-winrm-py"
+      ],
+      "status": "included",
+      "note": "Reviewed setup, Python entrypoint and optional MCP server. MCP is opt-in and defaults to 127.0.0.1; remote command execution/file transfer are documented functions."
+    },
+    {
+      "name": "exchanger.py",
+      "command": "exchanger.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/exchanger.py"
+    },
+    {
+      "name": "filetime.py",
+      "command": "filetime.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/filetime.py"
+    },
+    {
+      "name": "findDelegation.py",
+      "command": "findDelegation.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/findDelegation.py"
+    },
+    {
+      "name": "Get-GPPPassword.py",
+      "command": "Get-GPPPassword.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/Get-GPPPassword.py"
+    },
+    {
+      "name": "GetADComputers.py",
+      "command": "GetADComputers.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/GetADComputers.py"
+    },
+    {
+      "name": "GetADUsers.py",
+      "command": "GetADUsers.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/GetADUsers.py"
+    },
+    {
+      "name": "getArch.py",
+      "command": "getArch.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/getArch.py"
+    },
+    {
+      "name": "GetLAPSPassword.py",
+      "command": "GetLAPSPassword.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/GetLAPSPassword.py"
+    },
+    {
+      "name": "GetNPUsers.py",
+      "command": "GetNPUsers.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/GetNPUsers.py"
+    },
+    {
+      "name": "getPac.py",
+      "command": "getPac.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/getPac.py"
+    },
+    {
+      "name": "getST.py",
+      "command": "getST.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/getST.py"
+    },
+    {
+      "name": "getTGT.py",
+      "command": "getTGT.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/getTGT.py"
+    },
+    {
+      "name": "GetUserSPNs.py",
+      "command": "GetUserSPNs.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/GetUserSPNs.py"
+    },
+    {
+      "name": "goldenPac.py",
+      "command": "goldenPac.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/goldenPac.py"
+    },
+    {
+      "name": "impacket-secretsdump",
+      "command": "impacket-secretsdump",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/secretsdump.py"
+    },
+    {
+      "name": "karmaSMB.py",
+      "command": "karmaSMB.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/karmaSMB.py"
+    },
+    {
+      "name": "kerbrute",
+      "command": "kerbrute",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:ropnop/kerbrute"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "keylistattack.py",
+      "command": "keylistattack.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/keylistattack.py"
+    },
+    {
+      "name": "kintercept.py",
+      "command": "kintercept.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/kintercept.py"
+    },
+    {
+      "name": "ldapdomaindump",
+      "command": "ldapdomaindump",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:dirkjanm/ldapdomaindump"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "lookupsid.py",
+      "command": "lookupsid.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/lookupsid.py"
+    },
+    {
+      "name": "machine_role.py",
+      "command": "machine_role.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/machine_role.py"
+    },
+    {
+      "name": "mimikatz.py",
+      "command": "mimikatz.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/mimikatz.py"
+    },
+    {
+      "name": "mqtt_check.py",
+      "command": "mqtt_check.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/mqtt_check.py"
+    },
+    {
+      "name": "mssqlclient.py",
+      "command": "mssqlclient.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/mssqlclient.py"
+    },
+    {
+      "name": "mssqlinstance.py",
+      "command": "mssqlinstance.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/mssqlinstance.py"
+    },
+    {
+      "name": "net.py",
+      "command": "net.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/net.py"
+    },
+    {
+      "name": "netview.py",
+      "command": "netview.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/netview.py"
+    },
+    {
+      "name": "ntfs-read.py",
+      "command": "ntfs-read.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/ntfs-read.py"
+    },
+    {
+      "name": "ntlmrelayx.py",
+      "command": "ntlmrelayx.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/ntlmrelayx.py"
+    },
+    {
+      "name": "owneredit.py",
+      "command": "owneredit.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/owneredit.py"
+    },
+    {
+      "name": "ping.py",
+      "command": "ping.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/ping.py"
+    },
+    {
+      "name": "ping6.py",
+      "command": "ping6.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/ping6.py"
+    },
+    {
+      "name": "psexec.py",
+      "command": "psexec.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/psexec.py"
+    },
+    {
+      "name": "raiseChild.py",
+      "command": "raiseChild.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/raiseChild.py"
+    },
+    {
+      "name": "rbcd.py",
+      "command": "rbcd.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/rbcd.py"
+    },
+    {
+      "name": "rdp_check.py",
+      "command": "rdp_check.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/rdp_check.py"
+    },
+    {
+      "name": "reg.py",
+      "command": "reg.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/reg.py"
+    },
+    {
+      "name": "registry-read.py",
+      "command": "registry-read.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/registry-read.py"
+    },
+    {
+      "name": "regsecrets.py",
+      "command": "regsecrets.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/regsecrets.py"
+    },
+    {
+      "name": "Responder",
+      "command": "responder",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:lgandx/Responder"
+      ],
+      "status": "included",
+      "note": "Intentional name-resolution poisoning and authentication capture. Reviewed CLI, settings and configuration; certificate generation and local network inspection occur when the tool runs."
+    },
+    {
+      "name": "rpcdump.py",
+      "command": "rpcdump.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/rpcdump.py"
+    },
+    {
+      "name": "rpcmap.py",
+      "command": "rpcmap.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/rpcmap.py"
+    },
+    {
+      "name": "sambaPipe.py",
+      "command": "sambaPipe.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/sambaPipe.py"
+    },
+    {
+      "name": "samedit.py",
+      "command": "samedit.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/samedit.py"
+    },
+    {
+      "name": "samrdump.py",
+      "command": "samrdump.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/samrdump.py"
+    },
+    {
+      "name": "services.py",
+      "command": "services.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/services.py"
+    },
+    {
+      "name": "smbclient.py",
+      "command": "smbclient.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/smbclient.py"
+    },
+    {
+      "name": "smbexec.py",
+      "command": "smbexec.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/smbexec.py"
+    },
+    {
+      "name": "smbserver.py",
+      "command": "smbserver.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/smbserver.py"
+    },
+    {
+      "name": "sniff.py",
+      "command": "sniff.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/sniff.py"
+    },
+    {
+      "name": "sniffer.py",
+      "command": "sniffer.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/sniffer.py"
+    },
+    {
+      "name": "split.py",
+      "command": "split.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/split.py"
+    },
+    {
+      "name": "ticketConverter.py",
+      "command": "ticketConverter.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/ticketConverter.py"
+    },
+    {
+      "name": "ticketer.py",
+      "command": "ticketer.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/ticketer.py"
+    },
+    {
+      "name": "tstool.py",
+      "command": "tstool.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/tstool.py"
+    },
+    {
+      "name": "wmiexec.py",
+      "command": "wmiexec.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/wmiexec.py"
+    },
+    {
+      "name": "wmipersist.py",
+      "command": "wmipersist.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/wmipersist.py"
+    },
+    {
+      "name": "wmiquery.py",
+      "command": "wmiquery.py",
+      "section": "Active Directory i Impacket",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:fortra/impacket"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "examples/wmiquery.py"
+    },
+    {
+      "name": "LinEnum",
+      "command": "linenum",
+      "section": "Post-exploitation i podizanje privilegija",
+      "group": "menu",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:rebootuser/LinEnum"
+      ],
+      "status": "included",
+      "note": "Enumeration intentionally reads sensitive local configuration and readable password/hash files. Exported reports can contain secrets; no hidden remote destination was identified in this scoped inspection."
+    },
+    {
+      "name": "linpeas",
+      "command": "linpeas",
+      "section": "Post-exploitation i podizanje privilegija",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:peass-ng/PEASS-ng"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "linPEAS/"
+    },
+    {
+      "name": "pwntools",
+      "command": "python3",
+      "section": "Post-exploitation i podizanje privilegija",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:Gallopsled/pwntools"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "cewl",
+      "command": "cewl",
+      "section": "Lozinke i wordliste",
+      "group": "menu",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:digininja/CeWL"
+      ],
+      "status": "included",
+      "note": "Website-derived wordlist generator; reviewed Ruby entrypoint and Gemfile. Uses external ExifTool/dependencies when executed."
+    },
+    {
+      "name": "crunch",
+      "command": "crunch",
+      "section": "Lozinke i wordliste",
+      "group": "menu",
+      "previous_status": "missing",
+      "source_ids": [
+        "salsa:debian/crunch"
+      ],
+      "status": "included",
+      "note": "Debian-maintained complete Crunch source, linked by Kali. Avoids an unverified GitHub mirror. Reviewed generator and Makefile."
+    },
+    {
+      "name": "hashcat",
+      "command": "hashcat",
+      "section": "Lozinke i wordliste",
+      "group": "menu",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:hashcat/hashcat"
+      ],
+      "status": "included",
+      "note": "Offline password/hash audit tool. Wallet/hash formats in source are expected input-format support. Reviewed main entrypoint, build files and license."
+    },
+    {
+      "name": "hydra (auth brute)",
+      "command": "hydra",
+      "section": "Lozinke i wordliste",
+      "group": "menu",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:vanhauser-thc/thc-hydra"
+      ],
+      "status": "included",
+      "note": "Official THC authentication assessment source; reviewed configure and C entrypoint. Authentication attempts are an intentional capability, not proof of an upstream implant."
+    },
+    {
+      "name": "medusa (auth brute)",
+      "command": "medusa",
+      "section": "Lozinke i wordliste",
+      "group": "menu",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:jmk-foofus/medusa"
+      ],
+      "status": "included",
+      "note": "Foofus network authentication tool. This is distinct from Ch0pin/medusa already present for mobile instrumentation."
+    },
+    {
+      "name": "aircrack-ng",
+      "command": "aircrack-ng",
+      "section": "Bežične mreže",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:aircrack-ng/aircrack-ng"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "aireplay-ng",
+      "command": "aireplay-ng",
+      "section": "Bežične mreže",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:aircrack-ng/aircrack-ng"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "src/aireplay-ng/aireplay-ng.c"
+    },
+    {
+      "name": "airodump-ng",
+      "command": "airodump-ng",
+      "section": "Bežične mreže",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:aircrack-ng/aircrack-ng"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "src/airodump-ng/airodump-ng.c"
+    },
+    {
+      "name": "bettercap",
+      "command": "bettercap",
+      "section": "Bežične mreže",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:bettercap/bettercap"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "bully",
+      "command": "bully",
+      "section": "Bežične mreže",
+      "group": "menu",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:aanarchyy/bully"
+      ],
+      "status": "included",
+      "note": "Wireless WPS assessment source; privileged capture/transmission is intentional. Reviewed C entrypoint and Makefiles."
+    },
+    {
+      "name": "hcxdumptool",
+      "command": "hcxdumptool",
+      "section": "Bežične mreže",
+      "group": "menu",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:ZerBea/hcxdumptool"
+      ],
+      "status": "included",
+      "note": "Author-maintained capture tool; reviewed C entrypoint and Makefile. Wireless frame transmission/capture requires a separately chosen operating scope."
+    },
+    {
+      "name": "reaver",
+      "command": "reaver",
+      "section": "Bežične mreže",
+      "group": "menu",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:t6x/reaver-wps-fork-t6x"
+      ],
+      "status": "included",
+      "note": "Maintained Reaver/Wash fork. Reviewed C entrypoint and install/build files; no wireless operations performed."
+    },
+    {
+      "name": "binwalk",
+      "command": "binwalk",
+      "section": "Reverse engineering i exploit development",
+      "group": "menu",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:ReFirmLabs/binwalk"
+      ],
+      "status": "included",
+      "note": "Reviewed Rust implementation and extraction helpers. Dockerfile uses a remote Rust installer; extraction invokes external programs only when explicitly run. Historical v2 extractor findings are not evidence of malicious v3 source."
+    },
+    {
+      "name": "gdb + GEF/PEDA",
+      "command": "gdb",
+      "section": "Reverse engineering i exploit development",
+      "group": "menu",
+      "previous_status": "partial",
+      "source_ids": [
+        "sourceware:binutils-gdb",
+        "github:hugsy/gef",
+        "github:longld/peda"
+      ],
+      "status": "included",
+      "note": "GDB, GEF and PEDA sources are present; no extension is loaded automatically."
+    },
+    {
+      "name": "Ghidra",
+      "command": "ghidra",
+      "section": "Reverse engineering i exploit development",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:NationalSecurityAgency/ghidra"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "ltrace",
+      "command": "ltrace",
+      "section": "Reverse engineering i exploit development",
+      "group": "menu",
+      "previous_status": "missing",
+      "source_ids": [
+        "gitlab:cespedes/ltrace"
+      ],
+      "status": "included",
+      "note": "Canonical repository linked from ltrace.org. Reviewed source archive and build files; GitLab archive state was not reported by the API."
+    },
+    {
+      "name": "radare2",
+      "command": "r2",
+      "section": "Reverse engineering i exploit development",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:radareorg/radare2"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "strace",
+      "command": "strace",
+      "section": "Reverse engineering i exploit development",
+      "group": "menu",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:strace/strace"
+      ],
+      "status": "included",
+      "note": "Autogenerated upstream archives deliberately omit code via .gitattributes. Actual pinned Git objects were fetched and source/build/security files inspected instead."
+    },
+    {
+      "name": "aws-cli",
+      "command": "aws",
+      "section": "Cloud",
+      "group": "menu",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:aws/aws-cli"
+      ],
+      "status": "included",
+      "note": "Official AWS source. Reviewed CLI/build/install entrypoints and telemetry module: session IDs are stored locally and used with service requests; AWS_CLI_SESSION_ID_DISABLED is an opt-out. Binary installer was not run."
+    },
+    {
+      "name": "pacu",
+      "command": "pacu",
+      "section": "Cloud",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:RhinoSecurityLabs/pacu"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "ScoutSuite",
+      "command": "scout",
+      "section": "Cloud",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:nccgroup/ScoutSuite"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "garak",
+      "command": "garak",
+      "section": "C2, payloads i AI",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:NVIDIA/garak"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "rtg-ai",
+      "command": "rtg-ai",
+      "section": "RTG AI Suite",
+      "group": "menu",
+      "previous_status": "missing",
+      "source_ids": [],
+      "status": "unverified",
+      "note": "No canonical public source, reviewable version and redistribution terms verified for this RTG component. VM binaries were not copied."
+    },
+    {
+      "name": "rtg-tools",
+      "command": "rtg-tools",
+      "section": "RTG AI Suite",
+      "group": "menu",
+      "previous_status": "missing",
+      "source_ids": [],
+      "status": "unverified",
+      "note": "No canonical public source, reviewable version and redistribution terms verified for this RTG component. VM binaries were not copied."
+    },
+    {
+      "name": "apktool",
+      "command": "apktool",
+      "section": "Mobile reverse engineering",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:iBotPeaches/Apktool"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "dex2jar",
+      "command": "d2j-dex2jar",
+      "section": "Mobile reverse engineering",
+      "group": "menu",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:pxb1988/dex2jar"
+      ],
+      "status": "included",
+      "note": "Reviewed Gradle configuration, wrapper, launcher and Java command. Building can fetch Gradle/Maven dependencies; these were not installed or audited transitively."
+    },
+    {
+      "name": "frida-tools",
+      "command": "frida",
+      "section": "Mobile reverse engineering",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:frida/frida-tools"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "jadx",
+      "command": "jadx",
+      "section": "Mobile reverse engineering",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:skylot/jadx"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "objection",
+      "command": "objection",
+      "section": "Mobile reverse engineering",
+      "group": "menu",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:sensepost/objection"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "Cirecon",
+      "command": "cirecon",
+      "section": "Dodatni RTG programi",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [],
+      "status": "unverified",
+      "note": "No canonical public source, reviewable version and redistribution terms verified for this RTG component. VM binaries were not copied."
+    },
+    {
+      "name": "RTG Specter",
+      "command": "rtg_specter",
+      "section": "Dodatni RTG programi",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [],
+      "status": "unverified",
+      "note": "No canonical public source, reviewable version and redistribution terms verified for this RTG component. VM binaries were not copied."
+    },
+    {
+      "name": "RTG Ghost C2 CE",
+      "command": "rtg-ghost-c2",
+      "section": "Dodatni RTG programi",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [],
+      "status": "unverified",
+      "note": "No canonical public source, reviewable version and redistribution terms verified for this RTG component. VM binaries were not copied."
+    },
+    {
+      "name": "rtg-llmprobe",
+      "command": "rtg-llmprobe",
+      "section": "Dodatni RTG programi",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [],
+      "status": "unverified",
+      "note": "No canonical public source, reviewable version and redistribution terms verified for this RTG component. VM binaries were not copied."
+    },
+    {
+      "name": "rtg-llmfuzz",
+      "command": "rtg-llmfuzz",
+      "section": "Dodatni RTG programi",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [],
+      "status": "unverified",
+      "note": "No canonical public source, reviewable version and redistribution terms verified for this RTG component. VM binaries were not copied."
+    },
+    {
+      "name": "rtg-jailbreaker",
+      "command": "rtg-jailbreaker",
+      "section": "Dodatni RTG programi",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [],
+      "status": "unverified",
+      "note": "No canonical public source, reviewable version and redistribution terms verified for this RTG component. VM binaries were not copied."
+    },
+    {
+      "name": "rtg-llmscout",
+      "command": "rtg-llmscout",
+      "section": "Dodatni RTG programi",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [],
+      "status": "unverified",
+      "note": "No canonical public source, reviewable version and redistribution terms verified for this RTG component. VM binaries were not copied."
+    },
+    {
+      "name": "rtg-recon",
+      "command": "rtg-recon",
+      "section": "Dodatni RTG programi",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [],
+      "status": "unverified",
+      "note": "No canonical public source, reviewable version and redistribution terms verified for this RTG component. VM binaries were not copied."
+    },
+    {
+      "name": "rtg-report",
+      "command": "rtg-report",
+      "section": "Dodatni RTG programi",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [],
+      "status": "unverified",
+      "note": "No canonical public source, reviewable version and redistribution terms verified for this RTG component. VM binaries were not copied."
+    },
+    {
+      "name": "rtg-mutate",
+      "command": "rtg-mutate",
+      "section": "Dodatni RTG programi",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [],
+      "status": "unverified",
+      "note": "No canonical public source, reviewable version and redistribution terms verified for this RTG component. VM binaries were not copied."
+    },
+    {
+      "name": "RTG Toolkit",
+      "command": "rtg-toolkit",
+      "section": "Dodatni RTG programi",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [],
+      "status": "unverified",
+      "note": "No canonical public source, reviewable version and redistribution terms verified for this RTG component. VM binaries were not copied."
+    },
+    {
+      "name": "RTG Tool Manager",
+      "command": "rtg-toolkit-manager",
+      "section": "Dodatni RTG programi",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [],
+      "status": "unverified",
+      "note": "No canonical public source, reviewable version and redistribution terms verified for this RTG component. VM binaries were not copied."
+    },
+    {
+      "name": "RTG Toolkit Importer",
+      "command": "rtg-toolkit-import",
+      "section": "Dodatni RTG programi",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [],
+      "status": "unverified",
+      "note": "No canonical public source, reviewable version and redistribution terms verified for this RTG component. VM binaries were not copied."
+    },
+    {
+      "name": "SecLists",
+      "command": "seclists",
+      "section": "Kolekcije",
+      "group": "additional",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:danielmiessler/SecLists"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "PayloadsAllTheThings",
+      "command": "payloadsallthethings",
+      "section": "Kolekcije",
+      "group": "additional",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:swisskyrepo/PayloadsAllTheThings"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "PowerSploit",
+      "command": "powersploit",
+      "section": "Kolekcije",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [],
+      "status": "held",
+      "candidate_source": "github:PowerShellMafia/PowerSploit",
+      "note": "Archived; conservative existing policy retained."
+    },
+    {
+      "name": "Nishang",
+      "command": "nishang",
+      "section": "Kolekcije",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [],
+      "status": "held",
+      "candidate_source": "github:samratashok/nishang",
+      "note": "PowerShell 2 module-import exclusion condition admits Keylogger; see REDOS_REVIEW.md."
+    },
+    {
+      "name": "GTFOBins",
+      "command": "gtfobins",
+      "section": "Kolekcije",
+      "group": "additional",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:GTFOBins/GTFOBins.github.io"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "LOLBAS",
+      "command": "lolbas",
+      "section": "Kolekcije",
+      "group": "additional",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:LOLBAS-Project/LOLBAS"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "exploitdb",
+      "command": "exploitdb",
+      "section": "Kolekcije",
+      "group": "additional",
+      "previous_status": "covered",
+      "source_ids": [
+        "gitlab:exploit-database/exploitdb"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "exploit-suggester",
+      "command": "exploit-suggester",
+      "section": "Kolekcije",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [],
+      "status": "unverified",
+      "note": "Only /opt/rtg/tools/exploit-suggester was established; no exact upstream identity/version was recovered. No similarly named project was substituted."
+    },
+    {
+      "name": "naabu",
+      "command": "naabu",
+      "section": "Dodatni recon i mrežna analiza",
+      "group": "additional",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:projectdiscovery/naabu"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "dnsrecon",
+      "command": "dnsrecon",
+      "section": "Dodatni recon i mrežna analiza",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:darkoperator/dnsrecon"
+      ],
+      "status": "included",
+      "note": "Reviewed current Python CLI/packaging. README suggests remote uv installer; CLI can download a public suffix list. Neither action was performed."
+    },
+    {
+      "name": "fierce",
+      "command": "fierce",
+      "section": "Dodatni recon i mrežna analiza",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:mschwager/fierce"
+      ],
+      "status": "included",
+      "note": "Reviewed DNS CLI and Poetry metadata. DNS requests are its intended function."
+    },
+    {
+      "name": "whatweb",
+      "command": "whatweb",
+      "section": "Dodatni recon i mrežna analiza",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:urbanadventurer/WhatWeb"
+      ],
+      "status": "included",
+      "note": "Reviewed Ruby entrypoint, Gemfile and Makefile. Fingerprinting plugins/data were included in the bounded text-pattern scan, not a complete plugin audit."
+    },
+    {
+      "name": "nbtscan",
+      "command": "nbtscan",
+      "section": "Dodatni recon i mrežna analiza",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:resurrecting-open-source-projects/nbtscan"
+      ],
+      "status": "included",
+      "note": "Maintained upstream identified in Debian/Fedora package records; reviewed NetBIOS scanner and build metadata."
+    },
+    {
+      "name": "onesixtyone",
+      "command": "onesixtyone",
+      "section": "Dodatni recon i mrežna analiza",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:trailofbits/onesixtyone"
+      ],
+      "status": "included",
+      "note": "Original Trail of Bits SNMP assessment source; reviewed C entrypoint and Makefile."
+    },
+    {
+      "name": "tcpdump",
+      "command": "tcpdump",
+      "section": "Dodatni recon i mrežna analiza",
+      "group": "additional",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:the-tcpdump-group/tcpdump"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "anew",
+      "command": "anew",
+      "section": "Recon pomoćne komande",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:tomnomnom/anew"
+      ],
+      "status": "included",
+      "note": "Small append/deduplication utility; reviewed main.go and module metadata."
+    },
+    {
+      "name": "cdncheck",
+      "command": "cdncheck",
+      "section": "Recon pomoćne komande",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:projectdiscovery/cdncheck"
+      ],
+      "status": "included",
+      "note": "Reviewed Go CLI/library and metadata; CDN/WAF data and dependencies are separate data-flow surfaces at runtime."
+    },
+    {
+      "name": "mapcidr",
+      "command": "mapcidr",
+      "section": "Recon pomoćne komande",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:projectdiscovery/mapcidr"
+      ],
+      "status": "included",
+      "note": "Reviewed CIDR CLI and module/build metadata. No operations against networks were performed."
+    },
+    {
+      "name": "qsreplace",
+      "command": "qsreplace",
+      "section": "Recon pomoćne komande",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:tomnomnom/qsreplace"
+      ],
+      "status": "included",
+      "note": "Small URL query transformation utility; reviewed main.go and module metadata."
+    },
+    {
+      "name": "shuffledns",
+      "command": "shuffledns",
+      "section": "Recon pomoćne komande",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:projectdiscovery/shuffledns"
+      ],
+      "status": "included",
+      "note": "Reviewed Go CLI/module metadata. Wraps external massdns; this fetcher does not install or invoke it."
+    },
+    {
+      "name": "tlsx",
+      "command": "tlsx",
+      "section": "Recon pomoćne komande",
+      "group": "additional",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:projectdiscovery/tlsx"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "John the Ripper",
+      "command": "john",
+      "section": "Dodatne lozinke / Windows / payloads",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:openwall/john"
+      ],
+      "status": "included",
+      "note": "Openwall John the Ripper source; password/hash extractors are intentional. Reviewed main entrypoint and build/license files; no password recovery performed."
+    },
+    {
+      "name": "msfvenom",
+      "command": "msfvenom",
+      "section": "Dodatne lozinke / Windows / payloads",
+      "group": "additional",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:rapid7/metasploit-framework"
+      ],
+      "status": "included",
+      "note": "",
+      "baseline_evidence": "msfvenom"
+    },
+    {
+      "name": "Evil-WinRM (Ruby)",
+      "command": "evil-winrm",
+      "section": "Dodatne lozinke / Windows / payloads",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:Hackplayers/evil-winrm"
+      ],
+      "status": "included",
+      "note": "Ruby variant, separate from Python client. Three embedded Base64 PowerShell loaders were decoded as text for inspection, never executed; their remote loading features are documented."
+    },
+    {
+      "name": "PowerShell",
+      "command": "pwsh",
+      "section": "Dodatne lozinke / Windows / payloads",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:PowerShell/PowerShell"
+      ],
+      "status": "included",
+      "note": "Selected-file review of large Microsoft toolchain. Install script downloads additional platform scripts; it was inspected as text and not executed. Full source-pattern scan was not performed."
+    },
+    {
+      "name": "WinPEAS",
+      "command": "winpeas",
+      "section": "Dodatne lozinke / Windows / payloads",
+      "group": "additional",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:peass-ng/PEASS-ng"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "wifite",
+      "command": "wifite",
+      "section": "Dodatni wireless",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:derv82/wifite2"
+      ],
+      "status": "included",
+      "note": "Reviewed wireless orchestration entrypoint/config/packaging. Starts external wireless assessment tools only at runtime; none were invoked."
+    },
+    {
+      "name": "pixiewps",
+      "command": "pixiewps",
+      "section": "Dodatni wireless",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:wiire-a/pixiewps"
+      ],
+      "status": "included",
+      "note": "Reviewed WPS calculation C entrypoint and Makefile; analysis is intended offline WPS functionality."
+    },
+    {
+      "name": "airmon-ng",
+      "command": "airmon-ng",
+      "section": "Dodatni wireless",
+      "group": "additional",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:aircrack-ng/aircrack-ng"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "airbase-ng",
+      "command": "airbase-ng",
+      "section": "Dodatni wireless",
+      "group": "additional",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:aircrack-ng/aircrack-ng"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "airdecap-ng",
+      "command": "airdecap-ng",
+      "section": "Dodatni wireless",
+      "group": "additional",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:aircrack-ng/aircrack-ng"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "airdecloak-ng",
+      "command": "airdecloak-ng",
+      "section": "Dodatni wireless",
+      "group": "additional",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:aircrack-ng/aircrack-ng"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "airolib-ng",
+      "command": "airolib-ng",
+      "section": "Dodatni wireless",
+      "group": "additional",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:aircrack-ng/aircrack-ng"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "airserv-ng",
+      "command": "airserv-ng",
+      "section": "Dodatni wireless",
+      "group": "additional",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:aircrack-ng/aircrack-ng"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "airtun-ng",
+      "command": "airtun-ng",
+      "section": "Dodatni wireless",
+      "group": "additional",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:aircrack-ng/aircrack-ng"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "Proxychains / Proxychains4",
+      "command": "proxychains4",
+      "section": "Tuneli i proksiji",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:rofl0r/proxychains-ng"
+      ],
+      "status": "included",
+      "note": "Reviewed launcher, preload library and installer. LD_PRELOAD socket interception is an intentional proxy function, not a hidden persistence mechanism."
+    },
+    {
+      "name": "Socat",
+      "command": "socat",
+      "section": "Tuneli i proksiji",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [
+        "debian-source:socat"
+      ],
+      "status": "included",
+      "note": "Complete Debian source package: descriptor, upstream archive and Debian patches. Every recorded SHA-256 matched. Descriptor signature was not cryptographically verified; no archive is extracted by the fetcher."
+    },
+    {
+      "name": "Ncat",
+      "command": "ncat",
+      "section": "Tuneli i proksiji",
+      "group": "additional",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:nmap/nmap"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "nc / netcat",
+      "command": "netcat",
+      "section": "Tuneli i proksiji",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [
+        "salsa:debian/netcat-openbsd"
+      ],
+      "status": "included",
+      "note": "Debian source for OpenBSD netcat; reviewed C entrypoint/Makefile. Inventory did not establish which nc alternative is selected in the VM."
+    },
+    {
+      "name": "Tor",
+      "command": "tor",
+      "section": "Tuneli i proksiji",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [
+        "gitlab:torproject/tor"
+      ],
+      "status": "included",
+      "note": "Tor Project GitLab.com mirror. Canonical Tor-hosted GitLab was unavailable here; mirror identity is disclosed. Reviewed source/build entrypoint, not anonymity guarantees."
+    },
+    {
+      "name": "torsocks",
+      "command": "torsocks",
+      "section": "Tuneli i proksiji",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [
+        "salsa:pkg-privacy-team/torsocks"
+      ],
+      "status": "included",
+      "note": "Debian privacy-team source with upstream identity in configure metadata. Reviewed preload/socket library and build scripts."
+    },
+    {
+      "name": "MobSF",
+      "command": "mobsf",
+      "section": "Dodatni mobilni alati",
+      "group": "additional",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:MobSF/Mobile-Security-Framework-MobSF"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "JADX GUI",
+      "command": "jadx-gui",
+      "section": "Dodatni mobilni alati",
+      "group": "additional",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:skylot/jadx"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "dex2jar pomoćni alati",
+      "command": "dex2jar-helpers",
+      "section": "Dodatni mobilni alati",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:pxb1988/dex2jar"
+      ],
+      "status": "included",
+      "note": "Reviewed Gradle configuration, wrapper, launcher and Java command. Building can fetch Gradle/Maven dependencies; these were not installed or audited transitively."
+    },
+    {
+      "name": "rabin2",
+      "command": "rabin2",
+      "section": "Radare2 pomoćni alati",
+      "group": "additional",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:radareorg/radare2"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "rax2",
+      "command": "rax2",
+      "section": "Radare2 pomoćni alati",
+      "group": "additional",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:radareorg/radare2"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "rafind2",
+      "command": "rafind2",
+      "section": "Radare2 pomoćni alati",
+      "group": "additional",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:radareorg/radare2"
+      ],
+      "status": "included",
+      "note": ""
+    },
+    {
+      "name": "GCC",
+      "command": "gcc",
+      "section": "Prateći sistemski / razvojni alati",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:gcc-mirror/gcc"
+      ],
+      "status": "included",
+      "note": "Read-only GCC mirror; selected build/compiler files reviewed. Prerequisite downloader uses gcc.gnu.org and defaults to SHA-512 integrity checks. Full compiler codebase was not audited."
+    },
+    {
+      "name": "Go",
+      "command": "go",
+      "section": "Prateći sistemski / razvojni alati",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:golang/go"
+      ],
+      "status": "included",
+      "note": "Selected-file review of official Go toolchain. go.env defaults to the Go proxy/checksum service and automatic toolchain download. These operations were not run; full source scan was not performed."
+    },
+    {
+      "name": "objdump",
+      "command": "objdump",
+      "section": "Prateći sistemski / razvojni alati",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [
+        "sourceware:binutils-gdb"
+      ],
+      "status": "included",
+      "note": "Canonical Sourceware repository used by GDB and GNU Binutils. Actual pinned Git objects fetched; selected build, debugger and binary-reader entrypoints inspected. Full 43k-file audit not performed."
+    },
+    {
+      "name": "readelf",
+      "command": "readelf",
+      "section": "Prateći sistemski / razvojni alati",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [
+        "sourceware:binutils-gdb"
+      ],
+      "status": "included",
+      "note": "Canonical Sourceware repository used by GDB and GNU Binutils. Actual pinned Git objects fetched; selected build, debugger and binary-reader entrypoints inspected. Full 43k-file audit not performed."
+    },
+    {
+      "name": "strings",
+      "command": "strings",
+      "section": "Prateći sistemski / razvojni alati",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [
+        "sourceware:binutils-gdb"
+      ],
+      "status": "included",
+      "note": "Canonical Sourceware repository used by GDB and GNU Binutils. Actual pinned Git objects fetched; selected build, debugger and binary-reader entrypoints inspected. Full 43k-file audit not performed."
+    },
+    {
+      "name": "Docker",
+      "command": "docker",
+      "section": "Prateći sistemski / razvojni alati",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:docker/cli"
+      ],
+      "status": "included",
+      "note": "Official Docker CLI, not the daemon or Docker Desktop. Reviewed CLI/build metadata and OpenTelemetry integration; external plugins/daemon/containers are not included in this source review."
+    },
+    {
+      "name": "OpenSSL",
+      "command": "openssl",
+      "section": "Prateći sistemski / razvojni alati",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:openssl/openssl"
+      ],
+      "status": "included",
+      "note": "Official library/CLI source. Reviewed build configuration, CLI entrypoint and license; broad text scan is not a cryptographic or parser correctness audit."
+    },
+    {
+      "name": "curl",
+      "command": "curl",
+      "section": "Prateći sistemski / razvojni alati",
+      "group": "additional",
+      "previous_status": "covered",
+      "source_ids": [
+        "github:curl/curl"
+      ],
+      "status": "included",
+      "note": "curl je katalogizovan; crt.sh je spoljašnji servis korišćen u prečici."
+    },
+    {
+      "name": "wget",
+      "command": "wget",
+      "section": "Prateći sistemski / razvojni alati",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [
+        "salsa:debian/wget"
+      ],
+      "status": "included",
+      "note": "Debian-maintained GNU Wget source; reviewed configure and source snapshot. This is a downstream source, not a claim of exact VM version equivalence."
+    },
+    {
+      "name": "dig",
+      "command": "dig",
+      "section": "Prateći sistemski / razvojni alati",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [
+        "isc:isc-projects/bind9"
+      ],
+      "status": "included",
+      "note": "Canonical ISC GitLab source including dig and host. Reviewed both command entrypoints and package/build metadata."
+    },
+    {
+      "name": "host",
+      "command": "host",
+      "section": "Prateći sistemski / razvojni alati",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [
+        "isc:isc-projects/bind9"
+      ],
+      "status": "included",
+      "note": "Canonical ISC GitLab source including dig and host. Reviewed both command entrypoints and package/build metadata."
+    },
+    {
+      "name": "whois",
+      "command": "whois",
+      "section": "Prateći sistemski / razvojni alati",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:rfc1036/whois"
+      ],
+      "status": "included",
+      "note": "Maintainer WHOIS source; reviewed client and Makefile. Queries disclose supplied names to selected WHOIS servers by design."
+    },
+    {
+      "name": "traceroute",
+      "command": "traceroute",
+      "section": "Prateći sistemski / razvojni alati",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [
+        "debian-source:traceroute"
+      ],
+      "status": "included",
+      "note": "Complete Debian source package: descriptor, upstream archive and Debian patches. Every recorded SHA-256 matched. Descriptor signature was not cryptographically verified; no archive is extracted by the fetcher."
+    },
+    {
+      "name": "tcptraceroute",
+      "command": "tcptraceroute",
+      "section": "Prateći sistemski / razvojni alati",
+      "group": "additional",
+      "previous_status": "missing",
+      "source_ids": [
+        "github:mct/tcptraceroute"
+      ],
+      "status": "included",
+      "note": "Original TCP route tracer; reviewed C entrypoint and configure metadata. Raw-socket privilege handling is expected functionality."
+    }
+  ],
+  "summary": {
+    "menu": {
+      "included": 145,
+      "unverified": 2
+    },
+    "additional": {
+      "unverified": 14,
+      "included": 58,
+      "held": 2
+    },
+    "distinct_included_sources": 111,
+    "new_sources": 59
+  }
+}
